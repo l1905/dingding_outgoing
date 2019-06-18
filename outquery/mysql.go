@@ -10,7 +10,8 @@ import (
 )
 
 //mysql配置
-//var dbConfig string = "root:litongxue1@tcp(db.litongxue.com:3404)/dingDB?charset=utf8"
+//var dbConfig string = "xxxxx"
+
 //mysql实例
 var dbCon *sql.DB
 

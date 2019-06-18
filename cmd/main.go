@@ -124,10 +124,15 @@ func InArray(needle interface{}, haystack interface{}) (exists bool, index int) 
 }
 
 func main() {
-	fmt.Println("hello outgoing")
+	fmt.Println("start outgoing")
 
 	flag.Parse()
-	conf.Init()
+	err := conf.Init()
+
+	if err != nil {
+		fmt.Printf("配置文件解析失败")
+		return
+	}
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", dingtalk)

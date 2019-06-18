@@ -97,12 +97,6 @@ func ParseParam(myString string) (string) {
 		}
 	}
 
-	//其他都是查询， 走查询操作
-
-
-	//QueryAction("nihao")
-
-
 RESULT:
 	return resultStr
 	//其他，都等于查询
@@ -128,7 +122,6 @@ func HandleString(stringList []string) ([]string){
 			continue
 		}
 		if checkType == 1 {
-			//-tag -desc, -url, sdfsdf fdsfsdf
 
 			if checkTag || checkDesc || checkUrl || checkH || checkID {
 				newList = append(newList, currentStr)
@@ -151,7 +144,6 @@ func HandleString(stringList []string) ([]string){
 				checkType = 2
 			}
 		}
-		// -232323 3434 5434 4545 232 54545 323 45454 32323
 
 	}
 	if checkType == 3 {
